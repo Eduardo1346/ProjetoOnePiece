@@ -14,20 +14,36 @@ a seleção dele
         passo 3 - verificar se já exista um personagem selecionado, se sim, devemos remover 
 a seleção dele 
 */
+//OBJETIVO 2
+const personagens = document.querySelectorAll(".personagem");
 
+
+
+//1
 const botoes = document.querySelectorAll(".botao");
 
-botoes.forEach(botao => {
+botoes.forEach((botao, indice) => {
   botao.addEventListener("click", () => {
 
     // 3
-    const botaoSelecionado = document.querySelector(".botao.selecionado");
-    botaoSelecionado.classList.remove("selecionado");
-
+    desselecionarbotao();
+    //OBJ2 P3
+    desselecionarpersonagem();
 
     //2
     botao.classList.add("selecionado");
-    //asas
+    //OBJ2 P2
+    personagens[indice].classList.add("selecionado");
 
   });
 });
+
+function desselecionarbotao() {
+  const botaoSelecionado = document.querySelector(".botao.selecionado");
+  botaoSelecionado.classList.remove("selecionado");
+}
+
+function desselecionarpersonagem() {
+  const personagemSelecionado = document.querySelector(".personagem.selecionado");
+  personagemSelecionado.classList.remove("selecionado");
+}
