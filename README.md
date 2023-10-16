@@ -11,7 +11,7 @@ Meu projeto de início para minha caminhada na vida de desenvolvedor👾
 1 - Clone o projeto
 
 ```
-git clone <url>
+git clone <https://github.com/Eduardo1346/ProjetoOnePiece.git>
 ```
 
 2 - Acesse a pasta do projeto
